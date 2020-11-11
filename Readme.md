@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Станислав Гайворонский](https://up.htmlacademy.ru/adaptive/21/user/1572221).
-* Наставник: Евгений Бервяченок (https://up.htmlacademy.ru/adaptive/21/user/151813).
+* Наставник: [Евгений Бервяченок](https://up.htmlacademy.ru/adaptive/21/user/151813).
 
 ---
 
