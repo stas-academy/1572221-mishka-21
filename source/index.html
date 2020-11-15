@@ -5,11 +5,13 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo"></a>
+    <header class="header">
+      <a class="header__logo">
+        <img src="#" alt="Логотип Мишка">
+      </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Переключение состояния меню</span>
         </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
@@ -44,16 +46,17 @@
       <section class="things">
         <div class="things__wrapper">
           <div class="things__image">
-            <h1 class="things__header">Милые штуки ручной работы для дома</h1>
+            <img src="#" alt="Основной фон">
+            <h1 class="things__title page__title">Милые штуки ручной работы для дома</h1>
           </div>
-          <div class="things__buttons">
-            <a class="things__button" href="#">
-              <div class="things__button-wrapper">
+          <div class="things__anchors">
+            <a class="things__anchor" href="#">
+              <div class="things__anchor-wrapper">
                 <h2 class="things__text">Предметы интерьера</h2>
               </div>
             </a>
-            <a class="things__button" href="#">
-              <div class="things__button-wrapper">
+            <a class="things__anchor" href="#">
+              <div class="things__anchor-wrapper">
                 <h2 class="things__text">Детские игрушки</h2>
               </div>
             </a>
@@ -63,8 +66,8 @@
       <section class="product">
         <div class="product__wrapper">
           <div class="product__header">
-            <h2 class="product__title">Вязаные корзинки</h2>
-            <h3 class="product__subtitle">Товар недели</h3>
+            <h2 class="product__title page__title">Вязаные корзинки</h2>
+            <span class="product__subtitle">Товар недели</span>
           </div>
           <div class="product__description">
             <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -85,18 +88,18 @@
               </tbody>
             </table>
           </div>
-          <div class="product__order">
-            <h3 class="product__price">Цена: 990 руб.</h3>
-            <button class="product__button button" type="button">Заказать</button>
-          </div>
           <div class="product__image">
             <img src="#" alt="Три вязанные корзинки">
+          </div>
+          <div class="product__order">
+            <p class="product__price">Цена: 990 руб.</p>
+            <button class="product__button button" type="button">Заказать</button>
           </div>
         </div>
       </section>
       <section class="features">
         <div class="features__wrapper">
-          <h2 class="features__header">Коротко о нас:</h2>
+          <h2 class="features__title page__title">Коротко о нас:</h2>
           <ul class="features__list">
             <li class="features__item features__item--ecology">
               <p class="features__text">Экологически чистые материалы</p>
@@ -121,7 +124,7 @@
       </section>
       <section class="reviews">
         <div class="reviews__wrapper">
-          <h2>Отзывы</h2>
+          <h2 class="reviews__title page__title">Отзывы</h2>
           <div class="reviews__card">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
               у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -156,7 +159,7 @@
             <button class="reviews__navigation reviews__navigation--left" type="button"></button>
             <button class="reviews__navigation reviews__navigation--right" type="button"></button>
           </div>
-          <button class="reviews__button button" type="button">Написать</button>
+          <a class="reviews__button button" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -165,23 +168,25 @@
             <h2 class="contacts__title">Контакты</h2>
           </div>
           <div class="contacts__information">
-            <div class="contacts__email">
+            <div class="contacts__email contacts__block">
               <p class="contacts__shop">e-mail:</p>
               <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </div>
-            <div class="contacts__address">
+            <div class="contacts__address contacts__block">
               <p class="contacts__place">Адрес:</p>
               <p class="contacts__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>
             </div>
           </div>
-          <button class="contacts__button button" type="button">Напишите нам</button>
+          <a class="contacts__button button" href="#">Напишите нам</a>
           <div class="contacts__map"></div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo"></div>
+        <div class="page-footer__logo">
+          <img src="#" alt="Логотип Мишка">
+        </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -201,6 +206,7 @@
         <div class="page-footer__copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive">
             <span>Разработано</span>
+            <img src="#" alt="Логотип Htmlacademy">
           </a>
         </div>
       </div>
