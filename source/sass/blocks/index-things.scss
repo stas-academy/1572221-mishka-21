@@ -1,0 +1,44 @@
+.things__wrapper {
+  background-color: $grey-middle-color;
+}
+.things__image {
+  background-image: url("../../img/image/main-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 373px;
+}
+
+.things__title {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $black-color;
+  padding: 90px 0 0 0;
+  text-align: center;
+}
+
+.things__anchor {
+  display: block;
+  text-decoration: none;
+  color: $white-color;
+  min-height: 103px;
+  padding: 24px 30px 31px 30px;
+  box-sizing: border-box;
+}
+
+.things__anchor-interior {
+  background-color: $green-light-color;
+}
+
+.things__anchor-toy {
+  background-color: $green-middle-color;
+}
+
+.things__text {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
