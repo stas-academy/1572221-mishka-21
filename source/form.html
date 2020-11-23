@@ -45,64 +45,64 @@
       </nav>
     </header>
     <main class="page-contect">
-      <section class="promo">
-        <h1 class="promo__title">Вязание на заказ</h1>
-      </section>
-      <section class="primary-form">
-        <h2 class="visually-hidden">Форма для заказа</h2>
-        <div class="wrapper">
+      <div class="form-wrapper">
+        <section class="promo">
+          <h1 class="promo__title">Вязание на заказ</h1>
+        </section>
+        <section class="primary-form">
+          <h2 class="visually-hidden">Форма для заказа</h2>
           <form class="primary-form__order form" action="https://echo.htmlacademy.ru" method="post">
             <p class="form__paragraph">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
             <div class="form__box box-radio">
-              <h3 class="box-radio__title">Тип</h3>
+              <h3 class="box-radio__title form__all-title">Тип</h3>
               <div class="box-radio__wrapper">
-                <ul class="box-radio__list">
+                <ul class="box-radio__list form__list">
                   <li class="box-radio__item">
-                    <input class="box-radio__input" type="radio" name="type" id="accessory" value="accessory" checked>
+                    <input class="box-radio__input visually-hidden" type="radio" name="type" id="accessory" value="accessory" checked>
                     <label class="box-radio__lable" for="accessory">Аксессуар для интерьера</label>
                   </li>
                   <li class="box-radio__item">
-                    <input class="box-radio__input" type="radio" name="type" id="toy" value="toy">
+                    <input class="box-radio__input visually-hidden" type="radio" name="type" id="toy" value="toy">
                     <label class="box-radio__lable" for="toy">Детская игрушка</label>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="form__box box-checkbox">
-              <h3 class="box-checkbox__title">Цвет</h3>
+              <h3 class="box-checkbox__title form__all-title">Цвет</h3>
               <div class="box-checkbox__wrapper">
-                <ul class="box-checkbox__list">
+                <ul class="box-checkbox__list form__list">
                   <li class="box-checkbox__item">
-                    <input class="box-checkbox__input" type="checkbox" name="white" id="white" checked>
+                    <input class="box-checkbox__input visually-hidden" type="checkbox" name="white" id="white" checked>
                     <label class="box-checkbox__label" for="white">Белый</label>
                   </li>
                   <li class="box-checkbox__item">
-                    <input class="box-checkbox__input" type="checkbox" name="grey" id="grey" checked>
+                    <input class="box-checkbox__input visually-hidden" type="checkbox" name="grey" id="grey" checked>
                     <label class="box-checkbox__label" for="grey">Серый</label>
                   </li>
                   <li class="box-checkbox__item">
-                    <input class="box-checkbox__input" type="checkbox" name="tiffany" id="tiffany">
+                    <input class="box-checkbox__input visually-hidden" type="checkbox" name="tiffany" id="tiffany">
                     <label class="box-checkbox__label" for="tiffany">«Тиффани»</label>
                   </li>
                   <li class="box-checkbox__item">
-                    <input class="box-checkbox__input" type="checkbox" name="black" id="black">
+                    <input class="box-checkbox__input visually-hidden" type="checkbox" name="black" id="black">
                     <label class="box-checkbox__label" for="black">Черный</label>
                   </li>
                   <li class="box-checkbox__item">
-                    <input class="box-checkbox__input" type="checkbox" name="pink" id="pink">
+                    <input class="box-checkbox__input visually-hidden" type="checkbox" name="pink" id="pink">
                     <label class="box-checkbox__label" for="pink">Розовый</label>
                   </li>
                   <li class="box-checkbox__item">
-                    <input class="box-checkbox__input" type="checkbox" name="orange" id="orange">
+                    <input class="box-checkbox__input visually-hidden" type="checkbox" name="orange" id="orange">
                     <label class="box-checkbox__label" for="orange">Оранжевый</label>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="form__box box-name">
-              <h3 class="box-name__title">Фио</h3>
+              <h3 class="box-name__title form__all-title">Фио</h3>
               <div class="box-name__wrapper">
-                <ul class="box-name__list">
+                <ul class="box-name__list form__list">
                   <li class="box-name__item">
                     <label class="box-name__label" for="name">Имя:</label>
                     <input class="box-name__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
@@ -120,14 +120,14 @@
             </div>
             <div class="form__box box-contacts">
               <div class="box-contacts__contact">
-                <label class="box-contacts__lable" for="phone">Тел</label>
+                <label class="box-contacts__lable form__all-title" for="phone">Тел</label>
                 <div class="box-contacts__block">
                   <input class="box-contacts__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                   <!-- <svg></svg> блок для позишена-->
                 </div>
               </div>
               <div class="box-contacts__contact">
-                <label class="box-contacts__lable" for="email">E-mail</label>
+                <label class="box-contacts__lable form__all-title" for="email">E-mail</label>
                 <div class="box-contacts__block">
                   <input class="box-contacts__input" type="email" name="email" id="email" placeholder="Ваш Email*">
                   <!-- <svg></svg> блок для позишена-->
@@ -136,7 +136,7 @@
             </div>
             <div class="form__box box-description">
               <div class="box-description__wrapper">
-                <label class="box-description__label" for="additionally">Доп</label>
+                <label class="box-description__label form__all-title" for="additionally">Доп</label>
                 <div class="box-description__block">
                   <textarea class="box-description__textarea" name="additionally" id="additionally" placeholder="Опишите все ваши пожелания к заказу" cols="20" rows="5"></textarea>
                 </div>
@@ -147,8 +147,8 @@
               </div>
             </div>
           </form>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
