@@ -1,0 +1,51 @@
+.reviews__wrapper {
+  padding: 0 30px;
+}
+
+.reviews__title {
+  margin: 0;
+  padding-top: 58px;
+}
+
+.reviews__text {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: $grey-dark-color;
+  margin: 0;
+  padding-top: 14px;
+}
+
+.revies__name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black-color;
+  padding-top: 33px;
+}
+
+.revies__nickname {
+  color: $grey-dark-color;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__toggle {
+  display: flex;
+  margin-top: 30px;
+}
+
+.reviews__navigation {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 52px;
+  background-color: $white-color;
+  border: 1px solid $grey-shadows-color;
+}
+
+.reviews__button {
+  margin-top: 38px;
+  margin-bottom: 45px;
+}

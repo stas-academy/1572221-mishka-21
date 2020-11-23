@@ -2,4 +2,30 @@
   height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
   margin: auto;
+  min-width: 320px;
+}
+
+.page__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black-color;
+}
+
+.page__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+  background-color: $white-color;
+  width: 100%;
+  min-height: 52px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $grey-dark-color;
+  text-align: center;
 }
