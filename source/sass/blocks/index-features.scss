@@ -1,0 +1,39 @@
+.features {
+  position: relative;
+}
+
+.features__wrapper {
+  padding: 0 30px 0 30px;
+}
+
+.features__title {
+  margin: 0;
+  padding-top: 31px;
+}
+
+.features::before {
+  content: "";
+  background-image: url("../../img/icon/wave-line-small.svg");
+  position: absolute;
+  width: 100%;
+  min-height: 6px;
+  top: 0;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $black-color;
+  padding-top: 83px;
+}
+
+.features__text {
+  margin: 0;
+}

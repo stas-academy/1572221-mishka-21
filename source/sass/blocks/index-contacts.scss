@@ -1,0 +1,57 @@
+.contacts {
+  position: relative;
+}
+
+.contacts::before {
+  content: "";
+  background-image: url("../../img/icon/wave-line-small.svg");
+  position: absolute;
+  width: 100%;
+  min-height: 6px;
+  top: 0;
+}
+
+.contacts__wrapper {
+  padding: 0 30px;
+}
+
+.contacts__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: $black-color;
+  margin: 0;
+  padding-top: 38px;
+}
+
+.contacts__block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $grey-dark-color;
+  margin-top: 28px;
+}
+
+.contacts__paragraph {
+  margin: 0;
+}
+
+.contacts__link {
+  margin-left: 37px;
+  text-decoration: none;
+  color: $grey-dark-color;
+  border-bottom: 1px solid $green-extra-light-color;
+  line-height: 23px;
+  margin-top: 2px;
+}
+
+.contacts__text {
+  margin-left: 37px;
+}
+
+.contacts__button {
+  margin: 42px 0 39px 0;
+}
