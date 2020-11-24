@@ -5,6 +5,7 @@
   margin: 0;
   margin-top: 17px;
 }
+
 .form__all-title {
   display: flex;
   align-items: center;
@@ -15,6 +16,7 @@
   color: $green-light-color;
   text-transform: uppercase;
 }
+
 .form__all-title::after {
   content: "";
   flex-grow: 1;
@@ -23,53 +25,149 @@
   margin-left: 15px;
   background-color: $green-extra-light-color;
 }
+
 .form__list {
   margin: 0;
+  padding: 0;
+  margin-left: 60px;
   list-style: none;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   color: $black-color;
 }
+
 .box-radio__title {
   margin-top: 29px;
   // margin-bottom: 11px;
 }
+
+.box-radio__lable {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.box-radio__input + .box-radio__lable::before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: -60px;
+  top: -10px;
+  border: 2px solid $grey-dark-color;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.box-radio__input + .box-radio__lable:hover::before {
+  border: 2px solid $green-extra-light-color;
+}
+
+.box-radio__input + .box-radio__lable:active::before {
+  border: 2px solid $black-light-opacity-color;
+}
+
+.box-radio__input:checked + .box-radio__lable::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -48px;
+  top: 2px;
+  background-color: $green-extra-light-color;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.box-checkbox__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.box-checkbox__input + .box-checkbox__label::before {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: -60px;
+  top: -10px;
+  border: 2px solid $grey-dark-color;
+  box-sizing: border-box;
+}
+
+.box-checkbox__input + .box-checkbox__label:hover::before {
+  border: 2px solid $green-extra-light-color;
+}
+
+.box-checkbox__input + .box-checkbox__label:active::before {
+  border: 2px solid $grey-hide-opacity;
+}
+
+.box-checkbox__input:checked + .box-checkbox__label::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 17px;
+  background-image: url("../../img/icon/check.svg");
+  left: -52px;
+  box-sizing: border-box;
+}
+
 .box-radio__item {
   margin-top: 24px;
 }
+
 .box-radio__item:nth-child(1) {
   margin-top: 35px;
 }
+
 .box-checkbox__title {
   margin-top: 43px;
 }
+
 .box-checkbox__item {
   margin-top: 43px;
 }
+
 .box-checkbox__item:nth-child(1) {
   margin-top: 35px;
 }
+
 .box-name__title {
   margin-top: 43px;
 }
+
 .box-name__list {
   padding: 0;
+  margin: 0;
 }
+
 .box-name__item {
   display: flex;
   flex-direction: column;
   margin-top: 29px;
 }
+
 .box-name__input {
   border: none;
-  box-shadow: inset 0px -2px 0px $black-color;
+  box-shadow: inset 0 -2px 0 $black-color;
   min-height: 52px;
   font-weight: normal;
   font-size: 17px;
   line-height: 18px;
   box-sizing: border-box;
 }
+
+.box-name__input:hover {
+  box-shadow: inset 0 -2px 0 $green-extra-light-color;
+}
+
+.box-name__input:active {
+  box-shadow: inset 0 -2px 0 $green-extra-light-color;
+}
+
 .form input[type]::placeholder {
   color: $black-color;
   opacity: 0.3;
@@ -78,9 +176,10 @@
 .box-contacts__lable {
   margin-top: 34px;
 }
+
 .box-contacts__input {
   border: none;
-  box-shadow: inset 0px -2px 0px $black-color;
+  box-shadow: inset 0 -2px 0 $black-color;
   min-height: 52px;
   font-weight: normal;
   font-size: 17px;
@@ -89,12 +188,20 @@
   width: 100%;
 }
 
+.box-contacts__input:hover {
+  box-shadow: inset 0 -2px 0 $green-extra-light-color;
+}
+
+.box-contacts__input:active {
+  box-shadow: inset 0 -2px 0 $green-extra-light-color;
+}
+
 .box-description__label {
   margin-top: 34px;
 }
+
 .box-description__textarea {
   border: 2px solid $grey-dark-color;
-  // box-shadow: inset 0px -2px 0px $black-color;
   margin-top: 22px;
   box-sizing: border-box;
   min-height: 142px;
@@ -105,10 +212,20 @@
   padding: 17px 17px 0 17px;
   font-family: inherit;
 }
+
+.box-description__textarea:hover {
+  border: 2px solid $green-extra-light-color;
+}
+
+.box-description__textarea:active {
+  border: 2px solid $green-extra-light-color;
+}
+
 .form textarea::placeholder {
   color: $black-color;
   opacity: 0.3;
 }
+
 .box-description__text {
   font-weight: normal;
   font-size: 14px;
@@ -117,17 +234,12 @@
   margin: 0;
   margin-top: 17px;
 }
+
 .box-description__button {
-  font-weight: bold;
   font-size: 17px;
   line-height: 16px;
   min-height: 52px;
   width: 100%;
-  text-transform: uppercase;
-  color: $grey-dark-color;
-  background-color: $white-color;
-  border: 2px solid $grey-dark-color;
-  box-sizing: border-box;
   margin-top: 30px;
-  cursor: pointer;
+  margin-bottom: 50px;
 }

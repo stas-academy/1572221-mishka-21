@@ -41,6 +41,14 @@
   box-sizing: border-box;
 }
 
+.main-navigaton__link:hover {
+  color: $black-medium-opacity-color;
+}
+
+.main-navigaton__link:active {
+  color: $black-light-opacity-color;
+}
+
 .main-navigation__delivery {
   display: none;
   font-weight: normal;

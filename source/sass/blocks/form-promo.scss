@@ -1,13 +1,16 @@
 .form-wrapper {
   padding: 0 30px;
 }
+
 .promo {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 177px;
-  background-color: #f1f1f1;
+  background-color: $grey-light-color;
   margin: 0 -30px;
 }
+
 .promo__title {
   font-weight: bold;
   font-size: 27px;

@@ -1,6 +1,13 @@
 $white-color: #ffffff;
+$white-light-opacity-color: rgba(255, 255, 255, 0.3);
+$white-dark-opacity-color: rgba(255, 255, 255, 0.1);
+
 
 $black-color: #000000;
+$black-light-opacity-color:  rgba(0, 0, 0, 0.3);
+$black-medium-opacity-color:  rgba(0, 0, 0, 0.6);
+
+$grey-hide-opacity: rgba(68, 68, 68, 0.3);
 
 $grey-light-color: #f1f1f1;
 $grey-middle-color: #f9f9f9;
@@ -10,6 +17,7 @@ $grey-middle-extra-color: #e5e5e5;
 
 $green-light-color: #63d1bb;
 $green-extra-light-color: #62d1ba;
+$green-flash-light-color: #59d5bc;
 $green-middle-color: #56c3b2;
 $green-dark-color: #46c1ae;
 $green-extra-dark-color: #149080;

@@ -14,7 +14,6 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
-  color: $black-color;
   margin: 0;
   padding: 90px 0 0 0;
   text-align: center;
@@ -34,8 +33,16 @@
   background-color: $green-light-color;
 }
 
+.things__anchor-interior:hover {
+  background-color: $green-flash-light-color;
+}
+
 .things__anchor-toy {
   background-color: $green-middle-color;
+}
+
+.things__anchor-toy:hover {
+  background-color: $green-dark-color;
 }
 
 .things__text {
