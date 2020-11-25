@@ -55,6 +55,11 @@
 }
 
 .product__image {
-  width: 260px;
-  margin: auto;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product__button {
+  margin-bottom: 36px;
 }

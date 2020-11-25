@@ -19,7 +19,6 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  color: $black-color;
   margin: 0;
   padding-top: 38px;
 }
@@ -48,8 +47,29 @@
   margin-top: 2px;
 }
 
+.contacts__link:hover {
+  color: $green-dark-color;
+  border-bottom: 1px solid $green-dark-color;
+}
+
+.contacts__link:active {
+  color: $green-dark-color;
+  border-bottom: none;
+}
+
 .contacts__text {
   margin-left: 37px;
+}
+
+.contacts__map {
+  margin: 0 -30px;
+}
+
+.contacts__map iframe {
+  border: none;
+  margin-top: 62px;
+  display: block;
+  width: 100%;
 }
 
 .contacts__button {
