@@ -1,6 +1,36 @@
+.things {
+  position: relative;
+  background-color: $grey-middle-color;
+}
+
+.things::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-image: url("../../img/icon/wave-white-middle.svg");
+    position: absolute;
+    width: 100%;
+    min-height: 24px;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url("../../img/icon/wave-white-big.svg");
+  }
+}
+
 .things__wrapper {
   background-color: $grey-middle-color;
   padding: 0 30px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+  }
 }
 
 .things__image {
@@ -8,6 +38,13 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 373px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/image/main-background-big.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 746px;
+  }
 }
 
 .things__title {
@@ -17,6 +54,23 @@
   margin: 0;
   padding: 90px 0 0 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.things__anchors {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .things__anchor {
@@ -27,6 +81,11 @@
   padding: 24px 30px 31px 30px;
   margin: 0 -30px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .things__anchor-interior {
@@ -51,5 +110,10 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
-  width: 150px;
+  // width: 150px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

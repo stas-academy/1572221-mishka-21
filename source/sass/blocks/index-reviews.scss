@@ -1,10 +1,47 @@
+.reviews {
+  position: relative;
+}
+
 .reviews__wrapper {
-  padding: 0 30px;
+  padding: 58px 30px 45px 30px;
+  position: relative;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/image/review.png");
+    background-repeat: no-repeat;
+    padding: 82px 50px 115px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 50px 163px 50px;
+    margin-left: 50px;
+    max-width: 1150px;
+  }
 }
 
 .reviews__title {
   margin: 0;
-  padding-top: 58px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 35px;
+    margin-left: 125px;
+  }
+}
+
+.reviews__card {
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+  }
 }
 
 .reviews__text {
@@ -13,7 +50,16 @@
   line-height: 30px;
   color: $grey-dark-color;
   margin: 0;
-  padding-top: 14px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .revies__name {
@@ -21,7 +67,14 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  padding-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .revies__nickname {
@@ -34,6 +87,18 @@
 .reviews__toggle {
   display: flex;
   margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 50px;
+    bottom: 115px;
+    width: 180px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 160px;
+  }
 }
 
 .reviews__navigation {
@@ -42,9 +107,21 @@
   min-height: 52px;
   background-color: $white-color;
   border: 1px solid $grey-shadows-color;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .reviews__button {
   margin-top: 38px;
-  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    font-size: 17px;
+    width: 175px;
+  }
 }

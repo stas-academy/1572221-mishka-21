@@ -1,9 +1,17 @@
-.page__body {
+.page {
   height: 100%;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
   margin: auto;
   min-width: 320px;
   color: $black-color;
+  background-color: $white-color;
 }
 
 .page__title {
