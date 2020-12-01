@@ -21,16 +21,6 @@
 
 .things__wrapper {
   background-color: $grey-middle-color;
-  padding: 0 30px;
-  margin: auto;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1050px;
-  }
 }
 
 .things__image {

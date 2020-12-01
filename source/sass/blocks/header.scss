@@ -9,17 +9,13 @@
 }
 
 .main-navigation__wrapper {
-  margin: auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1050px;
   }
 }
 

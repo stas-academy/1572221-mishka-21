@@ -1,20 +1,5 @@
 .product {
-  // min-height: 820px;
   position: relative;
-}
-
-.product__wrapper {
-  padding: 0 30px;
-  margin: auto;
-
-  @media (min-width: $tablet-width) {
-    margin: auto;
-    padding: 0 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1050px;
-  }
 }
 
 .product__header {
@@ -36,14 +21,10 @@
   padding: 31px 0 4px 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 53px;
-    line-height: 57px;
     z-index: 2;
     order: 2;
   }

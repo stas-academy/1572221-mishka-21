@@ -9,8 +9,8 @@
   <body class="page__body">
     <header class="page__header">
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-        <div class="main-navigation__wrapper">
-          <div class="main-navigation__menu ">
+        <div class="main-navigation__wrapper page__wrapper">
+          <div class="main-navigation__menu">
             <a class="main-navigation__logo" href="#">
               <img src="img/icon/mishka-logo.svg" alt="Логотип сайта" width="86" height="35">
             </a>
@@ -58,7 +58,7 @@
     </header>
     <main class="page-contect">
       <section class="things">
-        <div class="things__wrapper">
+        <div class="things__wrapper page__wrapper">
           <div class="things__image">
             <h1 class="things__title">Милые штуки ручной<br> работы для дома</h1>
           </div>
@@ -77,7 +77,7 @@
         </div>
       </section>
       <section class="product">
-        <div class="product__wrapper">
+        <div class="product__wrapper page__wrapper">
           <div class="product__header">
             <h2 class="product__title page__title">Вязаные корзинки</h2>
             <span class="product__subtitle">Товар недели</span>
@@ -113,7 +113,7 @@
         </div>
       </section>
       <section class="features">
-        <div class="features__wrapper">
+        <div class="features__wrapper page__wrapper">
           <h2 class="features__title page__title">Коротко о нас:</h2>
           <ul class="features__list">
             <li class="features__item features__item--ecology">
@@ -138,55 +138,57 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrapper">
-          <h2 class="reviews__title page__title">Отзывы</h2>
-          <div class="reviews__card">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как<br>
-              у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <div class="revies__author">
-              <h3 class="revies__name">Анастасия Красильникова</h3>
-              <span class="revies__nickname">@misssssiskras</span>
+        <div class="reviews__wrapper page__wrapper">
+          <div class="reviews__contain">
+            <h2 class="reviews__title page__title">Отзывы</h2>
+            <div class="reviews__card">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+                у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <div class="revies__author">
+                <h3 class="revies__name">Анастасия Красильникова</h3>
+                <span class="revies__nickname">@misssssiskras</span>
+              </div>
             </div>
-          </div>
-          <!-- <div class="reviews__card reviews__card--hidden">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-              у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <div class="revies__author">
-              <h3 class="revies__name">Наталья Воронина</h3>
-              <span class="revies__nickname">@misssssiskras</span>
+            <!-- <div class="reviews__card reviews__card--hidden">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+                у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <div class="revies__author">
+                <h3 class="revies__name">Наталья Воронина</h3>
+                <span class="revies__nickname">@misssssiskras</span>
+              </div>
             </div>
-          </div>
-          <div class="reviews__card reviews__card--hidden">
-            <p class="reviews__text">Я молодой папа, но всё равно фотографии не набирали и близко такого количества лайков, как
-              у популярных инстамамочек. В отчаянии, я накупил аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <div class="revies__author">
-              <h3 class="revies__name">Денис Моисеев</h3>
-              <span class="revies__nickname">@misssssiskras</span>
+            <div class="reviews__card reviews__card--hidden">
+              <p class="reviews__text">Я молодой папа, но всё равно фотографии не набирали и близко такого количества лайков, как
+                у популярных инстамамочек. В отчаянии, я накупил аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <div class="revies__author">
+                <h3 class="revies__name">Денис Моисеев</h3>
+                <span class="revies__nickname">@misssssiskras</span>
+              </div>
+            </div> -->
+            <div class="reviews__toggle">
+              <button class="reviews__navigation reviews__navigation--left" type="button">
+                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
+                </svg>
+              </button>
+              <button class="reviews__navigation reviews__navigation--right" type="button">
+                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
+                </svg>
+              </button>
             </div>
-          </div> -->
-          <div class="reviews__toggle">
-            <button class="reviews__navigation reviews__navigation--left" type="button">
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
-              </svg>
-            </button>
-            <button class="reviews__navigation reviews__navigation--right" type="button">
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
-              </svg>
-            </button>
+            <a class="reviews__button page__button" href="#">Написать</a>
           </div>
-          <a class="reviews__button page__button" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper page__wrapper">
           <div class="contacts__header">
             <h2 class="contacts__title">Контакты</h2>
           </div>
@@ -211,7 +213,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper page__wrapper">
         <div class="page-footer__block">
           <a class="page-footer__logo" href="#">
             <img src="img/icon/mishka-logo.svg" alt="Логотип сайта" width="86" height="35">

@@ -2,32 +2,15 @@
   position: relative;
 }
 
-.features__wrapper {
-  padding: 0 30px;
-  margin: auto;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1150px;
-  }
-}
-
 .features__title {
   margin: 0;
   padding-top: 31px;
 
   @media (min-width: $tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
     padding: 55px 0 98px 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 53px;
-    line-height: 57px;
     padding: 68px 0 95px 0;
     margin-left: 175px;
   }
