@@ -1,16 +1,28 @@
 .page-footer {
   background-color: $grey-light-color;
   min-height: 160px;
-  padding-top: 24px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-height: 143px;
+  }
 }
 
 .page-footer__wrapper {
-  padding: 0 30px;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    display: flex;
+  }
 }
 
 .page-footer__logo {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .page-footer__social {
@@ -31,6 +43,12 @@
   padding-top: 22px;
   margin-top: 27px;
   border-top: 1px solid $grey-middle-extra-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
 .page-footer__link {
