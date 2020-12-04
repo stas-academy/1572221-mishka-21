@@ -1,14 +1,17 @@
-.form-wrapper {
-  padding: 0 30px;
-}
-
 .promo {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 177px;
   background-color: $grey-light-color;
-  margin: 0 -30px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 226px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 238px;
+  }
 }
 
 .promo__title {
@@ -17,4 +20,14 @@
   line-height: 30px;
   align-self: center;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
