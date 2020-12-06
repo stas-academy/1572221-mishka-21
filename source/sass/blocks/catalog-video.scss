@@ -1,17 +1,55 @@
 .video {
-  background: $white-color;
-  border: 1px solid $grey-shadows-color;
-  margin-top: 30px;
   margin-bottom: 58px;
   box-sizing: border-box;
+  // position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.video__wrapper {
+  box-sizing: border-box;
+  border: 1px solid $grey-shadows-color;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-height: 456px;
+    // flex-direction: row;
+    // width: 25%;
+  }
 }
 
 .video__production {
   display: flex;
   align-items: center;
-  min-height: 96px;
   padding: 21px 13px 26px 34px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 41px;
+    order: 2;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 761px;
+    padding-left: 0;
+    padding-right: 57px;
+    padding-top: 96px;
+
+    br {
+      display: block;
+    }
+  }
 }
 
 .video__title {
@@ -20,6 +58,10 @@
   line-height: 24px;
   margin: 0;
   margin-left: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .video__station {
@@ -34,6 +76,12 @@
 
 .video__content {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .video__click {
@@ -50,7 +98,18 @@
 
 .video__order {
   padding-left: 34px;
+  padding-right: 34px;
   padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 761px;
+    padding-left: 0;
+    padding-right: 57px;
+  }
 }
 
 .video__order:hover {
@@ -68,10 +127,19 @@
   color: $grey-dark-color;
   margin: 0;
   margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    margin-top: 0;
+  }
 }
 
 .video__block {
-  margin: 41px 34px 0 0;
+  margin: 41px 0 0 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 52px 0 0 0;
+  }
 }
 
 .video__button {
