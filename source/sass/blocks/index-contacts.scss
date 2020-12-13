@@ -57,12 +57,14 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    max-width: 80%;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
     margin-left: 175px;
+    max-width: 30%;
   }
 }
 

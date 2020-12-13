@@ -3,7 +3,7 @@
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    min-height: 89px;
+    // min-height: 89px;
     // background-color: transparent;
   }
 }
@@ -12,6 +12,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -41,13 +42,27 @@
 
 .main-navigation__logo {
   position: absolute;
+  top: 22px;
   left: 50%;
   transform: translateX(-51%);
-  padding: 22px 0;
+  // padding: 22px 0;
 
   @media (min-width: $tablet-width) {
     position: static;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 5px;
+  }
+}
+
+.main-navigation__logo:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__logo:active {
+  opacity: 0.3;
 }
 
 .main-navigation__toggle {
@@ -121,6 +136,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
 }
 
 .main-navigation__item {
@@ -161,13 +180,25 @@
   }
 }
 
+.site-list__link--border {
+  @media (min-width: $desktop-width) {
+    border-left: 1px solid $black-extra-light-opacity-color;
+    padding-left: 35px;
+  }
+}
+
 .site-list {
   @media (min-width: $tablet-width) {
     order: 2;
+    position: absolute;
+    left: 50px;
+    top: 88px;
+    z-index: 3;
   }
 
   @media (min-width: $desktop-width) {
     order: 1;
+    position: static;
   }
 }
 
@@ -205,6 +236,10 @@
     display: flex;
     flex-wrap: wrap;
     order: 3;
+    position: absolute;
+    left: 50px;
+    top: 88px;
+    z-index: 3;
   }
 }
 
@@ -212,9 +247,19 @@
   @media (min-width: $desktop-width) {
     font-size: 15px;
     padding-left: 0;
-    padding-right: 45px;
+    padding-right: 64px;
     padding-top: 20px;
   }
+}
+
+.user-list__link:hover path {
+  fill: $green-light-color;
+  opacity: 1;
+}
+
+.user-list__link:active path {
+  fill: $green-light-color;
+  opacity: 0.3;
 }
 
 .main-navigaton__link:hover {
@@ -233,8 +278,12 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    position: absolute;
+    top: 90px;
+    right: 50px;
     margin: 0;
     padding-top: 20px;
     order: 4;
+    z-index: 3;
   }
 }

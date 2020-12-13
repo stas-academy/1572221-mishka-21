@@ -4,6 +4,7 @@
   align-items: center;
   min-height: 177px;
   background-color: $grey-light-color;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-height: 226px;
@@ -11,6 +12,23 @@
 
   @media (min-width: $desktop-width) {
     min-height: 238px;
+  }
+}
+
+.promo::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-image: url("../../img/icon/wave-white-middle.svg");
+    position: absolute;
+    width: 100%;
+    min-height: 24px;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url("../../img/icon/wave-white-big.svg");
   }
 }
 

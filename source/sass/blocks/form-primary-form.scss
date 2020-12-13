@@ -390,6 +390,8 @@
 }
 
 .box-contacts__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     padding-top: 50px;
     padding-bottom: 24px;
@@ -397,6 +399,8 @@
 }
 
 .box-contacts__contact {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -411,6 +415,36 @@
   @media (min-width: $desktop-width) {
     margin-right: 180px;
   }
+}
+
+.box-contacts__icon {
+  position: absolute;
+  top: 28px;
+  right: 11px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 188px;
+  }
+}
+
+.box-contacts__icon path {
+  opacity: 0.2;
+}
+
+.box-contacts__icon:hover path {
+  fill: $green-extra-light-color;
+  opacity: 1;
+}
+
+.box-contacts__icon:active path {
+  fill: $green-extra-light-color;
+  opacity: 1;
 }
 
 .box-contacts__lable {
