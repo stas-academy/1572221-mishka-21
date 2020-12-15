@@ -60,6 +60,7 @@
   font-size: 17px;
   line-height: 20px;
   padding-top: 83px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -94,4 +95,94 @@
 
 .features__text {
   margin: 0;
+}
+
+.features__item--ecology::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 38px;
+  background-image: url("../../img/icon/flower.svg");
+  background-repeat: no-repeat;
+  left: 8px;
+  top: 35px;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
+  }
+}
+
+.features__item--profitably::before {
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 27px;
+  background-image: url("../../img/icon/banknote.svg");
+  background-repeat: no-repeat;
+  left: 0;
+  top: 36px;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
+  }
+}
+
+.features__item--like::before {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 27px;
+  background-image: url("../../img/icon/heart.svg");
+  background-repeat: no-repeat;
+  left: 7px;
+  top: 41px;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
+  }
+}
+
+.features__item--handmade::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  background-image: url("../../img/icon/strings.svg");
+  background-repeat: no-repeat;
+  left: 3px;
+  top: 38px;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
+  }
+}
+
+.features__item--support::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 23px;
+  background-image: url("../../img/icon/rocket.svg");
+  background-repeat: no-repeat;
+  left: -5px;
+  top: 40px;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
+  }
+}
+
+.features__item--box::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  background-image: url("../../img/icon/surprise.svg");
+  background-repeat: no-repeat;
+  left: 3px;
+  top: 36px;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
+  }
 }

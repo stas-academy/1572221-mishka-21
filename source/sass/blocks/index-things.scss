@@ -7,10 +7,12 @@
   @media (min-width: $tablet-width) {
     content: "";
     background-image: url("../../img/icon/wave-white-middle.svg");
+    background-repeat: repeat-x;
     position: absolute;
     width: 100%;
     min-height: 24px;
     bottom: 0;
+    z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,16 +26,26 @@
 }
 
 .things__image {
-  background-image: url("../../img/image/main-background.jpg");
+  background-image: url("../../img/image/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  height: 373px;
+  background-position: 50% -15px;
+  height: 283px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/image/hero-mobile@2x.jpg");
+    background-size: 320px;
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/image/main-background-big.jpg");
+    background-image: url("../../img/image/hero-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    height: 746px;
+    background-position: 50% 0;
+    height: 626px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/image/hero-desktop@2x.jpg");
+      background-size: 768px;
+    }
   }
 }
 
@@ -79,7 +91,25 @@
 }
 
 .things__anchor-interior {
+  position: relative;
   background-color: $green-light-color;
+}
+
+.things__anchor-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.things__element {
+  opacity: 0.5;
+}
+
+.things__element:hover {
+  opacity: 0.7;
+}
+
+.things__element:active {
+  opacity: 0.3;
 }
 
 .things__anchor-interior:hover {
@@ -88,6 +118,7 @@
 
 .things__anchor-toy {
   background-color: $green-middle-color;
+  position: relative;
 }
 
 .things__anchor-toy:hover {
@@ -100,7 +131,7 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
-  // width: 150px;
+  max-width: 200px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

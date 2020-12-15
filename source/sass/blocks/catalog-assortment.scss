@@ -93,6 +93,8 @@
 .assortment__adding {
   padding: 22px 0 26px 0;
   border-top: 1px solid $grey-shadows-color;
+  display: flex;
+  justify-content: space-between;
 }
 
 .assortment__link {
@@ -161,4 +163,20 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
   }
+}
+
+.assortment__icon {
+  display: block;
+  width: 21px;
+  height: 18px;
+}
+
+.assortment__icon:hover path {
+  fill: $green-light-color;
+  opacity: 1;
+}
+
+.assortment__icon:active path {
+  fill: $green-light-color;
+  opacity: 0.3;
 }

@@ -25,6 +25,15 @@
   }
 }
 
+.page-footer__logo:hover path {
+  fill: $green-dark-color;
+}
+
+.page-footer__logo:active path {
+  fill: $green-dark-color;
+  opacity: 0.3;
+}
+
 .page-footer__social {
   margin: auto;
   width: 145px;
@@ -37,6 +46,15 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.social__link:hover path {
+  fill: $green-dark-color;
+}
+
+.social__link:active path {
+  fill: $green-dark-color;
+  opacity: 0.3;
 }
 
 .page-footer__copyright {
@@ -60,6 +78,15 @@
   font-size: 19px;
   line-height: 18px;
   color: $black-color;
+}
+
+.page-footer__link:hover path {
+  fill: $green-dark-color;
+}
+
+.page-footer__link:active path {
+  fill: $green-dark-color;
+  opacity: 0.3;
 }
 
 .page-footer__academy-logo {
