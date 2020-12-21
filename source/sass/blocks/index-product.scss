@@ -11,8 +11,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 115px;
+    padding-top: 81px;
     margin-right: 350px;
+  }
+}
+
+.product__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
+    padding-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 71px;
   }
 }
 
@@ -69,16 +80,18 @@
   line-height: 24px;
   color: $grey-dark-color;
   margin: 0;
-  padding: 18px 0 28px 0;
+  padding: 18px 0 20px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin-top: 37px;
+    margin-top: 22px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 35px;
+    margin-top: 18px;
+    padding-bottom: 56px;
   }
 }
 
@@ -93,16 +106,27 @@
 }
 
 .product__options td {
+  // border-bottom: 1px solid $grey-shadows-color;
+  display: inline-block;
+  padding: 6px 0 8px 0;
+  box-sizing: border-box;
+  min-height: 38px;
+  min-width: 100px;
+}
+
+.product__cell {
+  // width: 100%;
   border-bottom: 1px solid $grey-shadows-color;
-  padding: 8px 0 8px 0;
 }
 
 .product__order {
   @media (min-width: $tablet-width) {
-    margin-top: -167px;
+    position: absolute;
+    top: 391px;
   }
 
   @media (min-width: $desktop-width) {
+    top: 542px;
     margin-left: 175px;
     margin-right: 58px;
   }
@@ -114,7 +138,7 @@
   line-height: 24px;
   text-align: center;
   color: $grey-dark-color;
-  margin: 25px 0;
+  margin: 26px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -131,22 +155,17 @@
   @media (min-width: $tablet-width) {
     min-width: 334px;
     margin-top: 50px;
-    // position: absolute;
-    // right: 30px;
-    // top: 85px;
-    // width: 334px;
-    // height: 404px;
-    // margin-left: 42px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 525px;
-    margin-top: -125px;
+    margin-top: -118px;
   }
 }
 
 .product__button {
   margin-bottom: 36px;
+  // display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;

@@ -1,0 +1,129 @@
+.modal {
+  display: none;
+}
+
+.modal__wrapper {
+  padding: 29px 30px 46px 30px;
+  width: 320px;
+  min-height: 336px;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 1px solid $grey-middle-light-color;
+  box-shadow: 0 5px 10px $black-light-medium-opacity-color;
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+  }
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.modal__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: $grey-dark-color;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.modal__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+    margin: auto;
+  }
+}
+
+.modal__block {
+  position: relative;
+  margin-right: 7px;
+  margin-bottom: 31px;
+  border: 2px solid $grey-middle-light-color;
+  box-sizing: border-box;
+  width: 82px;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.modal__block:hover {
+  border: 2px solid $grey-middle-light-color-hover;
+}
+
+.modal__block:active {
+  border: 2px solid $green-extra-light-color;
+}
+
+.modal__block:nth-child(3n) {
+  margin-right: 0;
+}
+
+.modal__label {
+  display: block;
+  cursor: pointer;
+  padding: 16px 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $grey-dark-color;
+}
+
+.modal__checkbox:checked + .modal__label::after {
+  content: "";
+  position: absolute;
+  width: 82px;
+  height: 52px;
+  border: 2px solid $green-extra-light-color;
+  box-sizing: border-box;
+  left: -2px;
+  top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+}
+
+.modal__button {
+  width: 260px;
+  min-height: 52px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $white-color;
+  background-color: $green-light-color;
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}
