@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 238px;
+    min-height: 255px;
   }
 }
 
@@ -22,13 +22,14 @@
     position: absolute;
     width: 100%;
     min-height: 24px;
-    bottom: 0;
+    bottom: -9px;
     z-index: 2;
   }
 
   @media (min-width: $desktop-width) {
     content: "";
-    background-image: url("../../img/icon/wave-white-big.svg");
+    background-image: url("../../img/icon/zigzag-fill-desktop.svg");
+    bottom: -6px;
   }
 }
 
@@ -42,10 +43,12 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 26px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    padding-top: 6px;
   }
 }

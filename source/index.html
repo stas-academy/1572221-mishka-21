@@ -70,7 +70,7 @@
             <a class="things__anchor things__anchor-interior" href="#">
               <div class="things__anchor-wrapper">
                 <h2 class="things__text things__text-interior">Предметы<br> интерьера</h2>
-                <svg class="things__element" width="40" height="62" viewBox="0 0 40 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="things__element things__element--lamp" width="40" height="62" viewBox="0 0 40 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g opacity="1">
                   <path d="M15.162 37.7167C14.8627 38.7119 14.9625 39.9061 15.162 41.2994C15.6607 43.8869 16.8577 47.2705 17.556 50.9527H22.6433C23.3415 47.3701 24.5385 43.9864 25.137 41.2994C25.4363 39.9061 25.4363 38.6124 25.137 37.7167C24.8378 36.821 24.2393 36.1244 23.142 35.4277H17.157C15.96 36.1244 15.3615 36.821 15.162 37.7167Z" fill="#149080"/>
                   <path d="M26.9327 57.6211H13.1671C11.8703 57.6211 10.8728 58.6163 10.8728 59.8105V61.9999H13.1671H26.9327H29.2269V59.8105C29.2269 58.6163 28.2294 57.6211 26.9327 57.6211Z" fill="#149080"/>
@@ -171,7 +171,7 @@
                 <span class="revies__nickname">@misssssiskras</span>
               </div>
             </div>
-            <!-- <div class="reviews__card reviews__card--hidden">
+            <div class="reviews__card reviews__card--hidden">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
                 у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
                 и мои фотографии сразу стали более стильными, а также набирают больше лайков!
@@ -190,7 +190,7 @@
                 <h3 class="revies__name">Денис Моисеев</h3>
                 <span class="revies__nickname">@misssssiskras</span>
               </div>
-            </div> -->
+            </div>
             <div class="reviews__toggle">
               <button class="reviews__navigation reviews__navigation--left" type="button">
                 <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -285,6 +285,29 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить<br> в корзину</h2>
+        <p class="modal__text">Выберете размер:</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal__container">
+            <div class="modal__block">
+                <input class="modal__checkbox visually-hidden" type="checkbox" name="small" id="small-check" checked>
+                <label class="modal__label" for="small-check">S</label>
+            </div>
+            <div class="modal__block">
+              <input class="modal__checkbox visually-hidden" type="checkbox" name="medium" id="medium-check">
+              <label class="modal__label" for="medium-check">M</label>
+            </div>
+            <div class="modal__block">
+              <input class="modal__checkbox visually-hidden" type="checkbox" name="large" id="large-check">
+              <label class="modal__label" for="large-check">L</label>
+            </div>
+          </div>
+          <button class="modal__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
     <script>
       let navMain = document.querySelector(".main-navigation");
       let navToggle = document.querySelector(".main-navigation__toggle");

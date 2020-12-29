@@ -17,6 +17,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 50px;
+    min-height: 88px;
   }
 }
 
@@ -53,7 +54,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 5px;
+    top: 9px;
   }
 }
 
@@ -68,7 +69,7 @@
 .main-navigation__toggle {
   background-color: transparent;
   position: absolute;
-  top: 30%;
+  top: 32%;
   right: 30px;
   width: 25px;
   height: 25px;
@@ -150,6 +151,10 @@
   @media (min-width: $tablet-width) {
     box-shadow: none;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 88px;
+  }
 }
 
 .main-navigaton__link {
@@ -165,6 +170,15 @@
   padding-left: 76px;
   min-height: 79px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+    padding-left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 88px;
+  }
 }
 
 .site-list__link {
@@ -177,6 +191,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
+    padding-top: 33px;
   }
 }
 
@@ -212,6 +227,10 @@
   position: absolute;
   left: 30px;
   top: 30px;
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+  }
 }
 
 .user-list__item--size {

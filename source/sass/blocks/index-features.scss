@@ -4,14 +4,14 @@
 
 .features__title {
   margin: 0;
-  padding-top: 31px;
+  padding-top: 37px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0 98px 0;
+    padding: 73px 0 98px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 68px 0 95px 0;
+    padding: 91px 0 95px 0;
     margin-left: 175px;
   }
 }
@@ -44,13 +44,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 110px;
+    row-gap: 112px;
     margin-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 180px;
-    grid-template-columns: 345px 345px;
+    margin-left: 176px;
+    grid-template-columns: 348px 345px;
     margin-bottom: 90px;
   }
 }
@@ -105,7 +105,7 @@
   background-image: url("../../img/icon/flower.svg");
   background-repeat: no-repeat;
   left: 8px;
-  top: 35px;
+  top: 28px;
 
   @media (min-width: $tablet-width) {
     top: -50px;
@@ -120,7 +120,7 @@
   background-image: url("../../img/icon/banknote.svg");
   background-repeat: no-repeat;
   left: 0;
-  top: 36px;
+  top: 29px;
 
   @media (min-width: $tablet-width) {
     top: -50px;
@@ -135,7 +135,7 @@
   background-image: url("../../img/icon/heart.svg");
   background-repeat: no-repeat;
   left: 7px;
-  top: 41px;
+  top: 34px;
 
   @media (min-width: $tablet-width) {
     top: -50px;
@@ -150,7 +150,7 @@
   background-image: url("../../img/icon/strings.svg");
   background-repeat: no-repeat;
   left: 3px;
-  top: 38px;
+  top: 31px;
 
   @media (min-width: $tablet-width) {
     top: -50px;
@@ -165,7 +165,7 @@
   background-image: url("../../img/icon/rocket.svg");
   background-repeat: no-repeat;
   left: -5px;
-  top: 40px;
+  top: 32px;
 
   @media (min-width: $tablet-width) {
     top: -50px;
@@ -180,7 +180,7 @@
   background-image: url("../../img/icon/surprise.svg");
   background-repeat: no-repeat;
   left: 3px;
-  top: 36px;
+  top: 30px;
 
   @media (min-width: $tablet-width) {
     top: -50px;

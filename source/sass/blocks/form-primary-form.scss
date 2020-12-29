@@ -1,5 +1,13 @@
 .form__header-wrapper {
-  padding-top: 54px;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 116px;
+  }
 }
 
 .form__paragraph {
@@ -7,7 +15,7 @@
   font-size: 13px;
   line-height: 24px;
   margin: 0;
-  margin-top: 17px;
+  // margin-top: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -18,6 +26,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-left: 175px;
+    width: 700px;
   }
 }
 
@@ -75,7 +84,7 @@
 .box-radio__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 63px;
+    padding-top: 35px;
     padding-bottom: 19px;
   }
 
@@ -94,7 +103,7 @@
   margin-top: 29px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 40px;
+    margin-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,14 +129,18 @@
   @media (min-width: $tablet-width) {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 48px;
+    margin-bottom: 39px;
     text-align: start;
-    padding-left: 85px;
+    padding-left: 80px;
     box-sizing: border-box;
 
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 84px;
   }
 }
 
@@ -188,11 +201,11 @@
 .box-checkbox__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 50px;
+    padding-top: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 48px;
+    padding-top: 53px;
   }
 }
 
@@ -274,7 +287,7 @@
 }
 
 .box-checkbox__title {
-  margin-top: 43px;
+  margin-top: 46px;
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
@@ -301,24 +314,30 @@
 .box-name__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 67px;
-    padding-bottom: 9px;
+    padding-top: 49px;
+    padding-bottom: 25px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
+    padding-top: 49px;
   }
 }
 
 .box-name__contain {
   @media (min-width: $tablet-width) {
-    width: 75%;
+    width: 76%;
   }
 }
 
 .box-name__title {
   margin-top: 43px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 17px;
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: 20px;
@@ -328,18 +347,22 @@
 .box-name__list {
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 6px;
+  }
 }
 
 .box-name__item {
   display: flex;
   flex-direction: column;
-  margin-top: 29px;
+  margin-top: 23px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     margin-top: 0;
-    margin-bottom: 41px;
+    margin-bottom: 24px;
   }
 }
 
@@ -354,8 +377,10 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
+    font-size: 19px;
     width: 100%;
     margin-left: 25px;
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -366,7 +391,6 @@
 .box-name__label {
   @media (min-width: $tablet-width) {
     padding-top: 16px;
-    margin-left: 4px;
   }
 }
 
@@ -391,10 +415,11 @@
 
 .box-contacts__wrapper {
   position: relative;
+  // padding-top: 34px;
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
-    padding-bottom: 24px;
+    padding-bottom: 30px;
   }
 }
 
@@ -404,6 +429,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+}
+
+.box-contacts__contact--email {
+  padding-top: 5px;
 }
 
 .box-contacts__block {
@@ -417,10 +446,10 @@
   }
 }
 
-.box-contacts__icon {
+.box-contacts__icon--phone {
   position: absolute;
-  top: 28px;
-  right: 11px;
+  top: 32px;
+  right: 8px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -429,7 +458,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 188px;
+    right: 182px;
+    top: 12px;
+  }
+}
+
+.box-contacts__icon--email {
+  position: absolute;
+  top: 73px;
+  right: 3px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 21px;
+    right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 178px;
   }
 }
 
@@ -448,12 +494,14 @@
 }
 
 .box-contacts__lable {
-  margin-top: 34px;
+  margin-top: 31px;
+  padding-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     margin-right: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
     margin-top: 18px;
+    padding-bottom: 0;
   }
 }
 
@@ -470,6 +518,7 @@
   @media (min-width: $tablet-width) {
     background-color: $grey-light-color;
     padding-left: 18px;
+    font-size: 19px;
   }
 }
 
@@ -562,6 +611,7 @@
   @media (min-width: $desktop-width) {
     margin-left: 175px;
     justify-content: space-between;
+    margin-top: 45px;
   }
 }
 
@@ -571,7 +621,7 @@
   line-height: 16px;
   color: $grey-dark-color;
   margin: 0;
-  margin-top: 17px;
+  margin-top: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -592,7 +642,7 @@
   min-height: 52px;
   width: 100%;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     width: 230px;
