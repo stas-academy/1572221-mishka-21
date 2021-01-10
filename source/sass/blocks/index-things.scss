@@ -18,6 +18,9 @@
   @media (min-width: $desktop-width) {
     content: "";
     background-image: url("../../img/icon/wave-white-big.svg");
+    width: 1150px;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -8px;
   }
 }

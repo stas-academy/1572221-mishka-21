@@ -7,11 +7,11 @@
   padding-top: 37px;
 
   @media (min-width: $tablet-width) {
-    padding: 73px 0 98px 0;
+    padding: 73px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 91px 0 95px 0;
+    padding: 91px 0 0 0;
     margin-left: 175px;
   }
 }
@@ -32,6 +32,9 @@
   @media (min-width: $desktop-width) {
     background-image: url("../../img/icon/wave-line-big.svg");
     min-height: 23px;
+    width: 1050px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -46,12 +49,14 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 112px;
     margin-bottom: 83px;
+    padding-top: 98px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 176px;
     grid-template-columns: 348px 345px;
     margin-bottom: 90px;
+    padding-top: 96px;
   }
 }
 
