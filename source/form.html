@@ -79,7 +79,7 @@
                 <ul class="box-radio__list form__list">
                   <li class="box-radio__item">
                     <input class="box-radio__input visually-hidden" type="radio" name="type" id="accessory" value="accessory" checked>
-                    <label class="box-radio__lable" for="accessory">Аксессуар для<br> интерьера</label>
+                    <label class="box-radio__lable box-radio__lable--accessory" for="accessory">Аксессуар для<br> интерьера</label>
                   </li>
                   <li class="box-radio__item">
                     <input class="box-radio__input visually-hidden" type="radio" name="type" id="toy" value="toy">
@@ -129,11 +129,11 @@
                 <ul class="box-name__list form__list">
                   <li class="box-name__item">
                     <label class="box-name__label" for="name">Имя:</label>
-                    <input class="box-name__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+                    <input class="box-name__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
                   </li>
                   <li class="box-name__item">
                     <label class="box-name__label" for="lastname">Фамилия:</label>
-                    <input class="box-name__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию*">
+                    <input class="box-name__input" type="text" name="lastname" id="lastname" placeholder="Укажите фамилию*" required>
                   </li>
                   <li class="box-name__item">
                     <label class="box-name__label" for="middlename">Отчество:</label>
@@ -157,7 +157,7 @@
                     </svg>
                 </label>
                 <div class="box-contacts__block">
-                  <input class="box-contacts__input" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  <input class="box-contacts__input box-contacts__input--phone" type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 </div>
               </div>
               <div class="box-contacts__contact box-contacts__contact--email">
@@ -167,7 +167,7 @@
                   </svg>
                 </label>
                 <div class="box-contacts__block">
-                  <input class="box-contacts__input" type="email" name="email" id="email" placeholder="Ваш Email*">
+                  <input class="box-contacts__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
                 </div>
               </div>
             </div>
@@ -242,7 +242,7 @@
         </div>
       </div>
     </footer>
-    <script>
+    <!-- <script>
       let navMain = document.querySelector(".main-navigation");
       let navToggle = document.querySelector(".main-navigation__toggle");
 
@@ -257,6 +257,7 @@
           navMain.classList.remove("main-navigation--opened");
         }
       });
-    </script>
+    </script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>
