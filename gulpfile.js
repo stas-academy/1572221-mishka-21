@@ -4,17 +4,16 @@ const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const sync = require("browser-sync").create();
-
-// New variable
-const webp = require("gulp-webp");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const sync = require("browser-sync").create();
+
 
 // Styles
 
@@ -52,14 +51,14 @@ exports.server = server;
 
 // Watcher
 
-const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
-}
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
+// const watcher = () => {
+//   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+//   gulp.watch("source/*.html").on("change", sync.reload);
+// }
+//
+// exports.default = gulp.series(
+//   styles, server, watcher
+// );
 
 
 
@@ -146,19 +145,19 @@ const clean = () => {
 
 // Server
 
-const server = (done) => {
-  sync.init({
-    server: {
-      baseDir: "build"
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-}
-
-exports.server = server;
+// const server = (done) => {
+//   sync.init({
+//     server: {
+//       baseDir: "build"
+//     },
+//     cors: true,
+//     notify: false,
+//     ui: false,
+//   });
+//   done();
+// }
+//
+// exports.server = server;
 
 // Reload
 
@@ -170,8 +169,8 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/scss/**/*.scss", gulp.series(styles));
-  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/js/menu.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
