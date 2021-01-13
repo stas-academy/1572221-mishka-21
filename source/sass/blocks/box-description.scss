@@ -1,0 +1,116 @@
+.box-description__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.box-description__contain {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
+}
+
+.box-description__label {
+  margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 10%;
+  }
+}
+
+.box-description__block {
+  @media (min-width: $tablet-width) {
+    width: 75%;
+  }
+}
+
+.box-description__textarea {
+  border: 2px solid $grey-dark-color;
+  margin-top: 22px;
+  box-sizing: border-box;
+  min-height: 142px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding: 17px 17px 0 17px;
+  font-family: inherit;
+  resize: vertical;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
+    width: 700px;
+  }
+}
+
+.box-description__textarea:hover {
+  border: 2px solid $green-extra-light-color;
+}
+
+.box-description__textarea:active {
+  border: 2px solid $green-extra-light-color;
+}
+
+.box-description__contain--button {
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+}
+
+.box-description__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $grey-dark-color;
+  margin: 0;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: right;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 175px;
+  }
+}
+
+.box-description__button {
+  font-size: 17px;
+  line-height: 16px;
+  min-height: 52px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
