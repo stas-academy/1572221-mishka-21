@@ -1,11 +1,6 @@
 .main-navigation {
   min-height: 79px;
   margin: auto;
-
-  @media (min-width: $tablet-width) {
-    // min-height: 89px;
-    // background-color: transparent;
-  }
 }
 
 .main-navigation__wrapper {
@@ -28,7 +23,6 @@
   border-bottom: 1px solid $black-extra-light-opacity-color;
 
   @media (min-width: $tablet-width) {
-    // background-color: greenyellow;
     padding-top: 22px;
     border-bottom: none;
   }
@@ -46,7 +40,6 @@
   top: 22px;
   left: 50%;
   transform: translateX(-50%);
-  // padding: 22px 0;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -146,7 +139,6 @@
 .main-navigation__item {
   text-align: start;
   box-shadow: 0 1px 0 $grey-shadows-color, inset 0 1px 0 $grey-shadows-color;
-  // background-color: moccasin;
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
