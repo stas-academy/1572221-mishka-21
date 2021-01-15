@@ -1,0 +1,40 @@
+.user-list {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.user-list__svg {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+  }
+}
+
+.user-list__item--size {
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    border-left: 1px solid $black-extra-light-opacity-color;
+    border-right: 1px solid $black-extra-light-opacity-color;
+    box-sizing: border-box;
+  }
+}
+
+.user-list__text--none {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.user-list__link:hover path {
+  fill: $green-light-color;
+  opacity: 1;
+}
+
+.user-list__link:active path {
+  fill: $green-light-color;
+  opacity: 0.3;
+}

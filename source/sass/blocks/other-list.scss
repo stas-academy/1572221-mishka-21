@@ -1,0 +1,22 @@
+.other-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+    position: absolute;
+    left: 50px;
+    top: 88px;
+    z-index: 3;
+  }
+}
+
+.other-list__link {
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+    padding-left: 0;
+    padding-right: 64px;
+    padding-top: 20px;
+  }
+}
