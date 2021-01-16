@@ -76,10 +76,18 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     margin-bottom: 65px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;
+
+    br.first {
+      display: block;
+    }
   }
 }
 

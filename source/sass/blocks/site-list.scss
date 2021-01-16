@@ -1,0 +1,35 @@
+.site-list__link {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 21px;
+    font-size: 15px;
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    padding-top: 33px;
+  }
+}
+
+.site-list__link--border {
+  @media (min-width: $desktop-width) {
+    border-left: 1px solid $black-extra-light-opacity-color;
+    padding-left: 35px;
+  }
+}
+
+.site-list {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    position: absolute;
+    left: 50px;
+    top: 88px;
+    z-index: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    position: static;
+  }
+}

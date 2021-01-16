@@ -43,24 +43,6 @@
   width: 145px;
 }
 
-.social__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social__link:hover path {
-  fill: $green-dark-color;
-}
-
-.social__link:active path {
-  fill: $green-dark-color;
-  opacity: 0.3;
-}
-
 .page-footer__copyright {
   padding-top: 17px;
   margin-top: 27px;
