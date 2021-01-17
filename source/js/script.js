@@ -14,9 +14,7 @@ navToggle.addEventListener('click', function() {
 });
 
 let modalLink = document.querySelector(".product__button");
-// let modalLink = document.querySelector(".open-modal");
 let modalPopup = document.querySelector(".modal");
-// let modalCart = document.querySelector(".assortment__icon");
 
 modalLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -30,11 +28,4 @@ window.addEventListener("keydown", function (evt) {
       modalPopup.classList.remove("modal--show");
     }
   }
-});
-
-let modalCart = document.querySelectorAll(".assortment__open-modal");
-
-modalCart.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modalPopup.classList.add("modal--show");
 });
