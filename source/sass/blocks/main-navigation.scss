@@ -149,7 +149,7 @@
   }
 }
 
-.main-navigaton__link {
+.main-navigation__link {
   position: relative;
   width: 100%;
   display: block;
@@ -173,11 +173,11 @@
   }
 }
 
-.main-navigaton__link:hover {
+.main-navigation__link:hover {
   color: $black-medium-opacity-color;
 }
 
-.main-navigaton__link:active {
+.main-navigation__link:active {
   color: $black-light-opacity-color;
 }
 

@@ -28,7 +28,7 @@ const styles = () => {
     ]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -61,11 +61,6 @@ exports.server = server;
 //   styles, server, watcher
 // );
 
-
-
-
-
-
 // WebP
 
 const createWebp = () => {
@@ -75,7 +70,6 @@ const createWebp = () => {
 }
 
 exports.createWebp = createWebp;
-
 
 // HTML
 
