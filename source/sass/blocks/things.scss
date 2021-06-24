@@ -6,7 +6,7 @@
 .things::before {
   @media (min-width: $tablet-width) {
     content: "";
-    background-image: url("../../img/icon/wave-white-middle.svg");
+    background-image: url("../img/icon/wave-white-middle.svg");
     background-position-x: center;
     position: absolute;
     width: 100%;
@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     content: "";
-    background-image: url("../../img/icon/wave-white-big.svg");
+    background-image: url("../img/icon/wave-white-big.svg");
     width: 1150px;
     left: 50%;
     transform: translateX(-50%);
