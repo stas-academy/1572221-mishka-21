@@ -30,24 +30,24 @@
 }
 
 .things__image {
-  background-image: url("../../img/image/hero-mobile.jpg");
+  background-image: url("../img/image/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% -15px;
   height: 283px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/image/hero-mobile@2x.jpg");
+    background-image: url("../img/image/hero-mobile@2x.jpg");
     background-size: 320px;
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/image/hero-desktop.jpg");
+    background-image: url("../img/image/hero-desktop.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
     height: 626px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/image/hero-desktop@2x.jpg");
+      background-image: url("../img/image/hero-desktop@2x.jpg");
       background-size: 768px;
     }
   }
