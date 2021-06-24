@@ -29,3 +29,10 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+// let modalLinkCut = document.querySelector(".assortment__icon");
+
+// modalLinkCut.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   modalPopup.classList.add("modal--show");
+// });
